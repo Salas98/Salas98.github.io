@@ -108,8 +108,9 @@ global styles
 */
 html,
 body {
-  background: #cae5ff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito';
+  font-size: 22px;
+  background-color: #FEF9E1;
 }
 
 ::selection {
@@ -255,7 +256,7 @@ body {
 }
 
 .padding-top-70 {
-  padding-top: 70px !important;
+  padding-top: 200px !important;
 }
 
 .padding-top-20 {
@@ -1440,7 +1441,8 @@ contact
 */
 
 #contact-us {
-  padding: 160px 0px;
+  padding-top: 200px;
+  padding-bottom: 64px;
 }
 
 #contact-us h5 {
