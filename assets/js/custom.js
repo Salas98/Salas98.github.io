@@ -131,4 +131,18 @@
 	}
 
 
+
+
 })(window.jQuery);
+
+$(document).ready(function() {
+	// Añadir funcionalidad para pantallas pequeñas
+	var width = $(window).width();
+  
+	if (width < 992) {
+	  $('.header-area .main-nav .nav li').on('click', function() {
+		// Alternar la clase activa para mostrar/ocultar submenú
+		$(this).children('.sub-nav').slideToggle(200);
+	  });
+	}
+  });

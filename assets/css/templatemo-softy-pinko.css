@@ -630,6 +630,10 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
   .header-area .main-nav:before {
     display: none;
   }
+
+  .header-area .main-nav .nav:before{
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -649,9 +653,13 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
   .header-area .menu-trigger {
     display: block !important;
   }
+
+  
   .header-area .main-nav {
     overflow: hidden;
   }
+
+  
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
@@ -663,6 +671,8 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+
+  
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
   }
@@ -684,13 +694,70 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
   }
+
+
 }
 
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
+
 }
+
+@media (max-width: 991px) {
+  /* Cuando se hace hover en el menú principal */
+  .header-area .main-nav:hover {
+    height: auto; /* El menú aumentará su tamaño */
+  }
+
+  .header-area .main-nav .nav li:hover .sub-nav {
+    display: block;
+    position: relative; /* Cambiar a relativo para que aparezca dentro del flujo del menú */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Estilos para hacer más suave la transición */
+  .header-area .main-nav {
+    transition: height 0.3s ease;
+  }
+
+  /* Aseguramos que el submenú se vea como un elemento más */
+  .header-area .main-nav .nav .sub-nav {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .header-area .main-nav .nav li:hover .sub-nav {
+    display: block; /* Mostrar el submenú al hacer hover */
+  }
+
+  .header-area .main-nav .nav li a {
+    font-size: 20px; /* Reducimos el tamaño del texto */
+    height: 40px; /* Altura más pequeña para cada enlace */
+    line-height: 40px; /* Centrar el texto verticalmente */
+  }
+
+  .header-area .main-nav .nav .sub-nav li a {
+    font-size: 14px; /* Reducimos el tamaño del texto */
+    height: 40px; /* Altura más pequeña para cada enlace */
+    line-height: 40px; /* Centrar el texto verticalmente */
+  }
+
+  /* Estilos para el submenú */
+  .header-area .main-nav .nav li:hover .sub-nav {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 8px; /* Margen más pequeño para el submenú */
+    font-size: 14px; /* Texto más pequeño en el submenú */
+  }
+}
+
+
+
 
 /* 
 ---------------------------------------------
