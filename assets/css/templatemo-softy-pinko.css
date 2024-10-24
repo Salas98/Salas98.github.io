@@ -1415,7 +1415,7 @@ Materials
 .imagen{
   border-radius: 20px;
   height: auto;
-  width: 233px;
+  width: 100%;
 }
 
 .pricing-item .pricing-body .price-wrapper .currency {
