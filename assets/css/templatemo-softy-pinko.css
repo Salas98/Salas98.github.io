@@ -1334,9 +1334,15 @@ team
 
 /* 
 ---------------------------------------------
-pricing
+Materials
 --------------------------------------------- 
 */
+
+#pricing-plans{
+  padding-top: 170px;
+}
+
+
 .pricing-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
@@ -1396,14 +1402,20 @@ pricing
 
 .pricing-item .pricing-body .price-wrapper {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 13px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background: #8261ee;
   width: 80%;
   margin: auto;
   margin-bottom: 40px;
   margin-top: 5px;
   border-radius: 20px;
+}
+
+.imagen{
+  border-radius: 20px;
+  height: auto;
+  width: 233px;
 }
 
 .pricing-item .pricing-body .price-wrapper .currency {
