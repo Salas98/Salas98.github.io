@@ -903,8 +903,8 @@ features
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   line-height: 90px;
   margin: auto;
   position: relative;
@@ -920,6 +920,21 @@ features
   color: #fff;
 }
 
+a img{
+  border: none;
+           vertical-align: middle;
+           margin: 0;
+           padding: 0;
+           display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.enlace{
+  margin-right: 20px;
+}
 .features-small-item .features-title {
   font-weight: 500;
   font-size: 18px;
@@ -949,7 +964,7 @@ features
 .home-feature {
   padding-bottom: 0px;
   padding-top: 30px;
-  margin-top: -220px;
+  margin-top: 150px;
   z-index: 9;
 }
 
