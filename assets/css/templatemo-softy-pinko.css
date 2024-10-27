@@ -1714,6 +1714,7 @@ preloader
   height: auto;
   border-color: #f0f0f0;
   border-radius: 5px;
+  transform: rotate(360deg);
 }
 
 #preloader .jumper img > div {
