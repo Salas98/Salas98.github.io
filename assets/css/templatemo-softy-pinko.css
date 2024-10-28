@@ -663,7 +663,7 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
   .header-area .main-nav .nav {
     float: none;
     width: 100%;
-    margin-top: 80px !important;
+    margin-top: 125px !important;
     display: none;
     -webkit-transition: all 0s ease 0s;
     -moz-transition: all 0s ease 0s;
@@ -689,14 +689,14 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
     padding: 0px !important;
     border: none !important;
     background: #fff !important;
-    color: #1e1e1e !important;
+    color: #1e1e1e;
   }
 
   .header-area .main-nav .nav li a:hover {
     color: #ffe041;
   }
 
-  .header-area.header-sticky .nav li a.active {
+  .header-area.header-sticky .nav li a .active {
   color: #23afff;
   font-weight: bold;
 
@@ -762,7 +762,11 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
     font-size: 14px; /* Texto más pequeño en el submenú */
   }
 
-  .header-area.header-sticky .nav li a.active {
+  .header-area .main-nav .nav li a:hover {
+    color: #ffe041;
+  }
+
+  .header-area.header-sticky .nav li a .active {
     color: #23afff;
     font-weight: bold;
   
@@ -782,7 +786,7 @@ Menu Materials
   top: 150px;
   left: 0px;
   right: 0px;
-  z-index: 100;
+  z-index: 50;
   height: 100px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -847,101 +851,7 @@ Menu Materials
   color: #ffe041;
 }
 
-.materials .main-nav .menu-trigger {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  top: 23px;
-  width: 32px;
-  height: 40px;
-  text-indent: -9999em;
-  z-index: 99;
-  right: 40px;
-  display: none;
-}
 
-.materials .main-nav .menu-trigger span,
-.materials .main-nav .menu-trigger span:before,
-.materials .main-nav .menu-trigger span:after {
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  background-color: #3B566E;
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  left: 0;
-}
-
-.materials .main-nav .menu-trigger span:before,
-.materials .main-nav .menu-trigger span:after {
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  background-color: #3B566E;
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  left: 0;
-  width: 75%;
-}
-
-.materials .main-nav .menu-trigger span:before,
-.materials .main-nav .menu-trigger span:after {
-  content: "";
-}
-
-.materials .main-nav .menu-trigger span {
-  top: 16px;
-}
-
-.materials .main-nav .menu-trigger span:before {
-  -moz-transform-origin: 33% 100%;
-  -ms-transform-origin: 33% 100%;
-  -webkit-transform-origin: 33% 100%;
-  transform-origin: 33% 100%;
-  top: -10px;
-  z-index: 10;
-}
-
-.materials .main-nav .menu-trigger span:after {
-  -moz-transform-origin: 33% 0;
-  -ms-transform-origin: 33% 0;
-  -webkit-transform-origin: 33% 0;
-  transform-origin: 33% 0;
-  top: 10px;
-}
-
-.materials .main-nav .menu-trigger.active span,
-.materials .main-nav .menu-trigger.active span:before,
-.materials .main-nav .menu-trigger.active span:after {
-  background-color: transparent;
-  width: 100%;
-  font-weight: bold;
-}
-
-.materials .main-nav .menu-trigger.active span:before {
-  -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
-  -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
-  -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
-  transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #23afff;
-  font-weight: bold;
-  
-}
-
-.materials .main-nav .menu-trigger.active span:after {
-  -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #23afff;
-  font-weight: bold;
-}
 
 .materials.header-sticky {
   min-height: 80px;
@@ -965,6 +875,133 @@ Menu Materials
   font-weight: bold;
 
 }
+
+@media (max-width: 1200px) {
+  .materials .main-nav .nav li {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .materials .main-nav:before {
+    display: none;
+  }
+
+  .materials .main-nav .nav:before{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .materials {
+    padding: 0px 15px;
+    height: 80px;
+    box-shadow: none;
+    text-align: center;
+    top:160px;
+  }
+  .materials .container {
+    padding: 0px;
+  }
+  .materials .logo {
+    margin-top: 27px !important;
+    margin-left: 30px;
+  }
+  .materials .materials-menu-trigger {
+    display: block !important;
+  }
+
+  
+  .materials .main-nav {
+    overflow: hidden;
+  }
+
+  
+  .materials .main-nav .nav {
+    float: none;
+    width: 100%;
+    margin-top: 80px !important;
+    display: none;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+    margin-left: 0px;
+  }
+
+  
+  .materials .main-nav .nav li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .materials .main-nav .nav li {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .materials .main-nav .nav li a {
+    height: 50px !important;
+    line-height: 50px !important;
+    padding: 0px !important;
+    border: none !important;
+    background: #fff !important;
+    color: #1e1e1e;
+  }
+
+  .materials .main-nav .nav li a:hover {
+    color: #ffe041;
+  }
+
+  .materials.header-sticky .nav li a.active {
+  color: #23afff;
+  font-weight: bold;
+
+}
+
+
+}
+
+@media (min-width: 992px) {
+  .materials .main-nav .nav {
+    display: flex !important;
+  }
+
+}
+
+@media (max-width:991px){
+  .materials .main-nav .nav{
+    display: ruby;
+  }
+  .materials .main-nav .nav li{
+    margin-left: 40px;
+  }
+}
+/*
+@media (max-width: 991px) {
+  /* Cuando se hace hover en el menú principal */
+ /* .materials .main-nav:hover {
+    height: auto; /* El menú aumentará su tamaño 
+  }
+
+
+  /* Estilos para hacer más suave la transición 
+  .materials .main-nav {
+    transition: height 0.3s ease;
+  }
+
+
+  .materials .main-nav .nav li a {
+    font-size: 20px; /* Reducimos el tamaño del texto 
+    height: 40px; /* Altura más pequeña para cada enlace 
+    line-height: 40px; /* Centrar el texto verticalmente 
+  }
+
+
+  .materials.header-sticky .nav li a.active {
+    color: #23afff;
+    font-weight: bold;
+  
+  }
+}*/
 
 
 
@@ -1896,7 +1933,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(135deg, #23afff 0%, #4fd68a 50%, #ffe041 100%), url(/assets/images/logo\ amb\ color\ \(1\).png);
+  background-image: linear-gradient(135deg, #23afff 0%, #4fd68a 50%, #ffe041 100%);
   left: 0;
   right: 0;
   top: 0;
