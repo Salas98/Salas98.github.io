@@ -849,6 +849,7 @@ Menu Materials
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  font-size: 9px;
 }
 
 .materials .main-nav .nav li a:hover {
