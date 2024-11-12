@@ -106,6 +106,21 @@ ul {
 global styles
 --------------------------------------------- 
 */
+#pricing-plans{
+  padding-top: 0px;
+}
+section, .section{
+  padding-bottom: 0px;
+}
+
+#Inici-de-curs{
+  padding-bottom: 60px;
+  padding-top: 250px;
+}
+#Nadal, #Final-de-curs, #genere{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 html,
 body {
   font-family: 'Nunito';
@@ -558,7 +573,7 @@ header
 .sub-nav {
   display: none;
   position: absolute;
-  background-color: #444;
+  background-color: #fff;
   padding: 10px;
   border-radius: 5px;
 }
@@ -661,6 +676,7 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
   
   .header-area .main-nav {
     overflow: hidden;
+    min-height: 80px;
   }
 
   
@@ -853,7 +869,7 @@ Menu Materials
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
-  font-size: 9px;
+  
 }
 
 .materials .main-nav .nav li a:hover {
@@ -905,7 +921,7 @@ Menu Materials
     height: 80px;
     box-shadow: none;
     text-align: center;
-    top:160px;
+    top: 125px;
   }
   .materials .container {
     padding: 0px;
@@ -921,7 +937,10 @@ Menu Materials
   
   .materials .main-nav {
     overflow: hidden;
+    min-height: 40px;
+
   }
+  
 
   
   .materials .main-nav .nav {
@@ -954,6 +973,7 @@ Menu Materials
     border: none !important;
     background: #fff !important;
     color: #1e1e1e;
+    font-size: 9px;
   }
 
   .materials .main-nav .nav li a:hover {
@@ -1593,6 +1613,7 @@ Materials
 --------------------------------------------- 
 */
 
+
 #pricing-plans{
   padding-top: 170px;
 }
@@ -1722,6 +1743,16 @@ Materials
 .pricing-item .pricing-footer {
   text-align: center;
   margin-top: 50px;
+}
+
+
+@media (max-width: 991px) {
+  #Inici-de-curs{
+    padding-top: 190px;
+  }
+  #pricing-plans{
+    padding-top: 0px;
+  }
 }
 
 /* 
@@ -2022,3 +2053,4 @@ preloader
     opacity: 0;
   }
 }
+
