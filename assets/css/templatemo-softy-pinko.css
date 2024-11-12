@@ -722,6 +722,10 @@ nav ul li:hover .sub-nav ul li:hover .sub-sub-nav{
     height: auto; /* El menú aumentará su tamaño */
   }
 
+  .header-area .main-nav .logo img {
+    height: 36px;
+  }
+
   .header-area .main-nav .nav li:hover .sub-nav {
     display: block;
     position: relative; /* Cambiar a relativo para que aparezca dentro del flujo del menú */
